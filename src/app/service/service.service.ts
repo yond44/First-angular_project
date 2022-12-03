@@ -11,4 +11,8 @@ export class ServiceService {
     getAlbumList() {
     return this.HttpClient.get('https://jsonplaceholder.typicode.com/posts')
     };
+
+    getComments() {
+    return this.HttpClient.get('https://jsonplaceholder.typicode.com/comments')
+    };
 }

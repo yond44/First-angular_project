@@ -12,3 +12,7 @@
 .grad {
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(105, 233, 20))
 }
+
+.pointer{
+    cursor: pointer;
+}

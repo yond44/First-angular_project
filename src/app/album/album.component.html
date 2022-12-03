@@ -15,13 +15,14 @@
           <a class="card-title" target="_blank">
             {{ albumList.title }}
           </a>
-          <ul class="list-unstyled mt-3 mb-4 ">
+          <ul class="list-unstyled mt-3 mb-4">
             <li>About:</li>
             <p>{{ album.body }}</p>
           </ul>
           <button
             type="button"
-            class="btn btn-lg btn-block btn-outline-secondary "
+            class="btn btn-lg btn-block btn-outline-secondary"
+            [routerLink] = "['/comment', album.id]"
           >
             See Comments
           </button>
@@ -30,12 +31,8 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt-4">
-            <button
-            type="button"
-            class="btn btn-lg btn-block btn-outline-secondary "
-          >
-            Back to Home
-          </button>
+    <button  [routerLink] = "['/home']" type="button" class="btn btn-lg btn-block btn-outline-secondary">
+      Back to Home
+    </button>
   </div>
-    
 </div>

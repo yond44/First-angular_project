@@ -7,7 +7,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AlbumComponent } from './album/album.component';
-import { CommentComponent } from './comment/comment.component'
+
+import { CommentsComponent } from './comments/comments.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CommentComponent } from './comment/comment.component'
     UserListComponent,
     NavbarComponent,
     AlbumComponent,
-    CommentComponent
+    CommentsComponent
   ],
   imports: [
     BrowserModule,

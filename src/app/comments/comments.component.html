@@ -1,0 +1,39 @@
+<div class="zero">
+  <h1 class="text-weight-bold text-center mt-4 mb-4">COMMENTS</h1>
+  <div class="container mr-4 ml-3">
+    <div
+      *ngFor="let comment of comments"
+      class="card-deck mb-4 mt-4 text-start size"
+    >
+      <div class="card cards">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal text-capitalize">
+            {{ comment.name }}
+          </h4>
+        </div>
+        <div class="card-body body">
+          <p class="card-title">
+            {{ comment.email }}
+          </p>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Comment:</li>
+            {{
+              comment.body
+            }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mt-4">
+    <button
+      
+      
+      type="button"
+      class="btn btn-lg btn-block btn-outline-secondary"
+      [routerLink]="['/home',]"
+    >
+      Back to Home
+    </button>
+  </div>
+</div>

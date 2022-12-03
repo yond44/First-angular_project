@@ -20,7 +20,7 @@ export class AlbumComponent implements OnInit{
     
   }
   
-  isShowing: Boolean= false;
+  
   ngOnInit() : void {
     // this.id = this.router.snapshot.params['userId']
     // this.id$ = this.router.params.pipe(map((params) => params['userId'])
