@@ -1,0 +1,58 @@
+<div class="zero">
+  <div class="container d-flex justify-content-around mr-4 ml-3 flex-wrap">
+    <div
+      *ngFor="let user of userList"
+      class="card-deck mb-4 mt-4 text-center size"
+    >
+      <div class="card cards">
+        <div class="card-header header">
+          <h4 class="my-0 font-weight-normal">{{ user.name }}</h4>
+        </div>
+        <div class="card-body body">
+          <a
+            href="https://{{ user.website }}"
+            class="card-title"
+            target="_blank"
+          >
+            {{ user.website }}
+          </a>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Username:</li>
+            <p>{{ user.username }}</p>
+            <li>Company:</li>
+            <p>{{ user.company.name }}</p>
+            <li>Email:</li>
+            <p>{{ user.email }}</p>
+            <li>Phone Number:</li>
+            <p>{{ user.phone }}</p>
+            <li>
+              Address:
+              <ul class="list-unstyled">
+                <li class="li">Street</li>
+                <p>{{ user.address.street }}</p>
+                <li class="li">Suite</li>
+                <p>{{ user.address.suite }}</p>
+                <li class="li">City</li>
+                <p>{{ user.address.city }}</p>
+                <li class="li">Zip Code</li>
+                <p>{{ user.address.zipcode }}</p>
+                <li class="li">Geo</li>
+                <p>
+                  <b>LAT : </b>{{ user.address.geo.lat }} <b>& </b><b>LNG : </b
+                  >{{ user.address.geo.lng }}
+                </p>
+              </ul>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-lg btn-block btn-outline-secondary"
+            [routerLink] = "['/album', user.id]"
+          >
+            More Detail
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
