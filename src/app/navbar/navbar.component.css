@@ -16,3 +16,13 @@
 .pointer{
     cursor: pointer;
 }
+
+.zero2 {
+    min-height: 10vh;
+    width: 100%;  
+    background-image: url('./../../assets/bg3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 8%;
+}
