@@ -8,7 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AlbumComponent } from './album/album.component';
 
-import { CommentsComponent } from './comments/comments.component'
+import { CommentsComponent } from './comments/comments.component';
+import { PostComponent } from './post/post.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CommentsComponent } from './comments/comments.component'
     UserListComponent,
     NavbarComponent,
     AlbumComponent,
-    CommentsComponent
+    CommentsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
